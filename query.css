@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: #475569;
+    display: flex;
+    flex-direction: column;
+}
+header, main, footer{
+    display: grid;
+    place-content: center;
+}
+header {
+    background-color: black;
+    color: aliceblue;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+    background-color: blue;
+    color: white;
+}
+@media screen and (min-width:581px){
+    body{
+        background-color: aqua;
+        background-image: linear-gradient(to left,steelblue,#fff);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.nowrap{
+    white-space: nowrap;
+}
+header,footer{
+    position: sticky;
+    background-color: #475569;
+    color: aliceblue;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding: 1.5rem;
+}
+footer{
+    bottom: 0;
+}
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color:white;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.card img{
+    border: 5px double #333;
+    border-radius: 50%;
+}
+.card figcaption{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+nav{
+    background-color: #fff;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    font: 1.5rem "Nunito", sans-serif;
+
+}
+a:hover{
+    color: brown;
+}
+@media screen and (min-width:581px){
+    main{
+        background-color: aqua;
+        background-image: linear-gradient(to left,steelblue,#fff);
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .card{
+        width: min(100%,400px);
+    }
+    
+}
