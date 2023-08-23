@@ -3,22 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
 
 body {
-    font: 1.5rem "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif;
     min-height: 100vh;
     background-color: #475569;
-    background-image: radial-gradient(whitesmoke,#475569);
     display: flex;
     flex-direction: column;
 }
 header, main, footer{
     display: grid;
     place-content: center;
-    color: aliceblue;
+}
+header {
+    background-color: black;
+    color: whitesmoke;
 }
 
 main {
@@ -36,6 +35,24 @@ footer {
         background-image: linear-gradient(to left,steelblue,#fff);
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+}
 img {
     display: block;
     max-width: 100%;
@@ -47,7 +64,7 @@ img {
 header,footer{
     position: sticky;
     background-color: #475569;
-    color: aliceblue;
+    color: whitesmoke;
     text-align: center;
 }
 header{
@@ -96,14 +113,13 @@ nav{
     max-width: 100%;
     height: auto;
     color: #333;
-   
 }
 a {
     text-decoration: none;
     cursor: pointer;
     font-size: 30px;
     font: 1.5rem "Nunito", sans-serif;
-    
+
 }
 a:hover{
     color: brown;
@@ -119,5 +135,5 @@ a:hover{
     .card{
         width: min(100%,400px);
     }
-    
+
 }
